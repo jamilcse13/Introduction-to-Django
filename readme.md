@@ -10,3 +10,14 @@
 - we can create multiple app inside out project
 - run the project on server:
     - python3 manage.py runserver
+
+## Virtual Environment
+- Install virtual environment golabally
+    - pip install virtualenv
+- Then create my own virtual environment in my project
+    - virtualenv venv
+- Then again install django in virtual env (inside the project)
+- store the requierments packages with version within the project by this command:
+    - pip freeze > requirements.txt
+- Then when someone work with this project, he just need to run the command for installing these pacages:
+    - pip install -r requirements.txt
