@@ -21,3 +21,8 @@
     - pip freeze > requirements.txt
 - Then when someone work with this project, he just need to run the command for installing these pacages:
     - pip install -r requirements.txt
+
+# Ptoject Setup
+- djangoProject->settings.py: include the app name 'djangoApp' inside INSTALLED_APPS
+- djangoProject->urls.py: include the apps urls 'path('', include('djangoApp.urls'))' inside urlpatterns
+- create urls.py inside djangoApp
