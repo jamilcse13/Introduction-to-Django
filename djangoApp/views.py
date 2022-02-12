@@ -42,3 +42,6 @@ def myThirdPage(request):
 
 def myImagePage(request):
     return render(request, 'imagepage.html')
+
+def myImagePage2(request):
+    return render(request, 'imagepage2.html')
