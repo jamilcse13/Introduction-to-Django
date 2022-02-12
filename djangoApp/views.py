@@ -17,3 +17,9 @@ def intro(request, name, age):
         "age" : age
     }
     return JsonResponse(myDictionary)
+
+def myFristPage(request):
+    return render(request, 'index.html')
+
+def mySecondPage(request):
+    return render(request, 'second.html')
