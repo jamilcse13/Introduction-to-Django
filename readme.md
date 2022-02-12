@@ -39,3 +39,5 @@
 - block-endblock: we can change a specific portion from parent page to child page. This should write both parent and child page
     - {% block title %}Modified Title{% endblock %}
     - {% block content %}Modified Content{% endblock %}
+- static load: load an image from static folder
+    - {% load static %} <img src="{% static 'django.png' %}">

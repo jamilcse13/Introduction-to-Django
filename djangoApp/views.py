@@ -23,3 +23,22 @@ def myFristPage(request):
 
 def mySecondPage(request):
     return render(request, 'second.html')
+
+def myThirdPage(request):
+    var = "assalamu alaikum"
+    greeting = "hey how are you?"
+    fruits = ['apple', 'mango', 'banana']
+    num1, num2 = 8, 5
+    ans = num1>num2
+    mydictionary = {
+        "var" : var,
+        "msg" : greeting,
+        "myFruits" : fruits,
+        "num1" : num1,
+        "num2" : num2,
+        "ans" : ans,
+    }
+    return render((request), 'third.html', context=mydictionary)
+
+def myImagePage(request):
+    return render(request, 'imagepage.html')

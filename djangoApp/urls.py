@@ -7,5 +7,7 @@ urlpatterns = [
     path('add/<int:a>/<int:b>', views.add, name='add'),
     path('intro/<str:name>/<int:age>', views.intro, name='intro'),
     path('myfirstpage', views.myFristPage, name='myfirstpage'),
-    path('mysecondpage', views.mySecondPage, name='mysecondpage')
+    path('mysecondpage', views.mySecondPage, name='mysecondpage'),
+    path('mythirdpage', views.myThirdPage, name='mythirdpage'),
+    path('myimagepage', views.myImagePage, name='myimagepage'),
 ]
