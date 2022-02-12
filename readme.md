@@ -41,3 +41,23 @@
     - {% block content %}Modified Content{% endblock %}
 - static load: load an image from static folder
     - {% load static %} <img src="{% static 'django.png' %}">
+- url: pass a url by name in action
+ - {% url 'submitmyform' %}
+- csrf_token: for csrf validation
+    - {% csrf_token %}
+
+# View:
+- context: we use to pass data to template. sending dictionary type data and we can show the the data just using the key.
+    - return render(request, 'index.html', context=mydictionary)
+
+# Url:
+- we write the urls inside urlpatterns list in urls.py file
+- url format:
+    - path('home', views.Index, name='index')
+        - home: url
+        - Index: method in views file
+        - name='index': naming
+    - path('intro/<str:name>/<int:age>', views.intro, name='intro')
+        - here we send two parameters from url
+        - we should maintain this format with data type
+
