@@ -61,3 +61,9 @@
         - here we send two parameters from url
         - we should maintain this format with data type
 
+## forms:
+- as_p: as paragraph
+- as_table: as table
+- as_ul: as ul
+- attrs: using this we can pass class and its value by key-value in any form input
+    - attrs={'class':'form-control'})
